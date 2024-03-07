@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS1300ResponsiveDesign</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sarina&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <body>
+    <div id="root">
+      <div class="container">
+        <!--This is the navigation bar-->
+        <nav id="navbar">
+          <h3 class="nav-logo">Bagel Gourmet Café</h3>
+          <div
+            class="toggle-button"
+            onclick="toggleNavList()"
+            alt="toggle button to access menu"
+          >
+            <div class="tog-bar"></div>
+            <div class="tog-bar"></div>
+            <div class="tog-bar"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="https://CS1300ResponsiveDesign/#home">Home</a></li>
+            <li><a href="https://CS1300ResponsiveDesign/#menu">Menu</a></li>
+            <li>
+              <a href="https://CS1300ResponsiveDesign/#delivery">Delivery</a>
+            </li>
+            <li>
+              <a href="https://CS1300ResponsiveDesign/#contact">Contact Us</a>
+            </li>
+            <li><a href="https://CS1300ResponsiveDesign/#cart">Cart</a></li>
+          </ul>
+        </nav>
+
+        <!--This is the Home section-->
+        <div id="home">
+          <div class="home-container">
+            <div class="home-text">
+              <h2>WHO WE ARE</h2>
+              <p>
+                Based in Providence, RI, Bagel Gourmet Café has been serving
+                great food and bagels for over 15 years. With our dough made
+                fresh daily, quality is a guarantee!
+              </p>
+            </div>
+            <img
+              class="home-img"
+              src="images/20191219-seo-bagel-recipe-delish-ehg-8846-1578412004.jpg"
+              alt="Background image of bagels bundled together"
+            />
+          </div>
+        </div>
+
+        <!--This is the Menu section-->
+        <div id="menu">
+          <div class="section-header">
+            <h2 style="font-size: 45px">MENU</h2>
+            <h2 class="cust-fav" style="font-weight: normal">
+              Customer Favorites
+            </h2>
+          </div>
+
+          <!--First menu item card-->
+          <div class="card-container">
+            <div class="card">
+              <img
+                src="images/13Bagels-a-superJumbo-v2.jpg"
+                class="menu-img"
+                alt="picture of different bagels aligned on a table "
+              />
+              <table>
+                <tr>
+                  <td><h2>Just a Bagel</h2></td>
+                  <td><h2 class="price">$0.95</h2></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <p>
+                      Options include: Plain, Blueberry, Cinnamon Sugar, Egg,
+                      Rye, Pumpernickel, Sesame, Poppy, Salt, Onion, Cinnamon
+                      Raisin, Spinach, Sunflower, Garlic, Wheat, Everything,
+                      Whole Wheat Everything
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="cart-button-container">
+                    <button class="cart-button" alt="add to cart button">
+                      Add to Cart
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!--Second menu item card-->
+            <div class="card">
+              <img
+                src="images/bagel-lox-and-cream-cheese-301911.jpg"
+                class="menu-img"
+                alt="picure of a bagel with lox and cream cheese"
+              />
+              <table>
+                <tr>
+                  <td><h2>Bagel w/ Lox</h2></td>
+                  <td><h2 class="price">$8.25</h2></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <p>
+                      Served with cream cheese, lettuce, tomatoes and onions.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="cart-button-container">
+                    <button class="cart-button" alt="add to cart button">
+                      Add to Cart
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!--Third menu item card-->
+            <div class="card">
+              <img
+                src="images/Scrambled-Egg-Sandwich-The-Live-In-Kitchen-Featured.jpg"
+                class="menu-img"
+                alt="picture of a bagel, egg and avocado sandwich"
+              />
+              <table>
+                <tr>
+                  <td><h2>Bagel w/ Eggs</h2></td>
+                  <td><h2 class="price">$3.01</h2></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <p>
+                      Choice of scrambled, sunny side up or boiled up. Avocado
+                      available for an additional cost.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="cart-button-container">
+                    <button class="cart-button" alt="add to cart button">
+                      Add to Cart
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!--This is the Delivery section-->
+        <div id="delivery">
+          <div class="delivery-container">
+            <div class="section-header">
+              <h2 style="font-size: 45px">DELIVERY</h2>
+              <p>
+                Please see our delivery locations on the map below. Call us at
+                (401) 454-8800 to place your order.
+              </p>
+            </div>
+            <div>
+              <img
+                class="dummy-map"
+                src="images/Screenshot 2024-02-25 at 7.55.27 PM.png"
+                alt="non-interactive picture of an imbedded map"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--This is the Contact section-->
+        <div id="contact">
+          <div class="contact-container">
+            <div class="section-header">
+              <h2 style="font-size: 45px">CONTACT US</h2>
+            </div>
+            <div class="contact-content">
+              <div class="cont-info">
+                <p>
+                  Please contact us to request more information about our food
+                  menu, services, placing catering orders, or to provide
+                  feedback about our website. Please be aware that we need a 24
+                  hour notification in advance for all catering orders.
+                </p>
+              </div>
+              <div class="form-container">
+                <form class="info-row">
+                  <label for="fname">First name *</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Jane"
+                  /><br />
+                  <label for="lname">Last name *</label><br />
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Doe"
+                  /><br />
+                  <label for="email">Email *</label><br />
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="jane.doe@gmail.com"
+                  /><br />
+                  <label for="number">Phone number *</label><br />
+                  <input
+                    type="text"
+                    id="number"
+                    name="number"
+                    placeholder="123-345-5671"
+                  /><br />
+                  <label for="message">Message *</label><br />
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Type something here..."
+                    rows="4"
+                    cols="50"
+                  ></textarea
+                  ><br />
+                  <button class="send-button" alt="send button">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--This is the webpage footer-->
+        <!-- <footer id="footer">
+          <a href="https://CS1300ResponsiveDesign/#home">Home</a>
+          <a href="https://CS1300ResponsiveDesign/#menu">Menu</a>
+          <a href="https://CS1300ResponsiveDesign/#delivery">Delivery</a>
+          <a href="https://CS1300ResponsiveDesign/#contact">Contact Us</a>
+          <a href="https://CS1300ResponsiveDesign/#cart">Cart</a>
+        </footer> -->
+      </div>
+    </div>
+  </body>
+</html>
